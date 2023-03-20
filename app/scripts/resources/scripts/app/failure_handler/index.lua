@@ -129,7 +129,7 @@
 		caller_id_name = session:getVariable("caller_id_name");
 		caller_id_number = session:getVariable("caller_id_number");
 		call_direction = session:getVariable("call_direction");
-		if (caller_direction == "local") then
+		if (call_direction == "local") then
 			caller_id_name = session:getVariable("effective_caller_id_name");
 		end
 		sip_to_user = session:getVariable("sip_to_user");
